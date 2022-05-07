@@ -1,15 +1,20 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+using System.Web;
 using HospitalManagementSystem.Models;
-using MedicalAppointment.Models;
 
 namespace HospitalManagementSystem.Data
 {
     public class HospitalManagementSystemContext : DbContext
     {
+        internal object bloodList;
+
+        public HospitalManagementSystemContext()
+        {
+        }
+
         public HospitalManagementSystemContext (DbContextOptions<HospitalManagementSystemContext> options)
             : base(options)
         {
@@ -30,5 +35,6 @@ namespace HospitalManagementSystem.Data
         public DbSet<MedicalAppointment.Models.Vaccination> Vaccination { get; set; }
 
         public DbSet<HospitalManagementSystem.Models.VaccineList> VaccineList { get; set; }
+        public object BloodLists { get; internal set; }
     }
 }

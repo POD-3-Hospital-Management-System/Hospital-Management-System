@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2101601\\source\\repos\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {}
+    "C:\\POD 3 MFPE HMS\\Project\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2101601\\source\\repos\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {
+    "C:\\POD 3 MFPE HMS\\Project\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2101601\\source\\repos\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+        "projectUniqueName": "C:\\POD 3 MFPE HMS\\Project\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
         "projectName": "HospitalManagementSystem",
-        "projectPath": "C:\\Users\\2101601\\source\\repos\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
+        "projectPath": "C:\\POD 3 MFPE HMS\\Project\\HospitalManagementSystem\\HospitalManagementSystem\\HospitalManagementSystem.csproj",
         "packagesPath": "C:\\Users\\2101601\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2101601\\source\\repos\\HospitalManagementSystem\\HospitalManagementSystem\\obj\\",
+        "outputPath": "C:\\POD 3 MFPE HMS\\Project\\HospitalManagementSystem\\HospitalManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.8, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.16, )"
@@ -65,6 +73,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.17.0, )"
             }
           },
           "imports": [

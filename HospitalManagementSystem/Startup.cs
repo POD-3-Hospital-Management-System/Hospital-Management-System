@@ -50,6 +50,7 @@ namespace HospitalManagementSystem
             }
 
             app.UseHttpsRedirection();
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseRouting();
 
@@ -57,7 +58,7 @@ namespace HospitalManagementSystem
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }
